@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Futura Book BT";
+  src: url("../font/futubk.otf");
+  src: local("?"), url("../font/futubk.otf") format("opentype");
+}
+
+/* line 8, ../sass/screen.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, ../sass/screen.scss */
+body {
+  font-size: 75% !important;
+  line-height: 1.45em;
+}
+
+/* float clearing for IE6 */
+/* line 21, ../sass/screen.scss */
+* html .clear, * html .mainNav ul, .mainNav * html ul {
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+/* line 26, ../sass/screen.scss */
+* + html .clear, * + html .mainNav ul, .mainNav * + html ul {
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+/* line 30, ../sass/screen.scss */
+.clear:after, .mainNav ul:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/***********MAIN NAV******/
+/* line 7, ../sass/_navigation.scss */
+.mainNav {
+  height: 36px;
+  padding-right: 3px;
+}
+/* line 10, ../sass/_navigation.scss */
+.mainNav ul {
+  position: relative;
+  padding: 0;
+}
+/* line 14, ../sass/_navigation.scss */
+.mainNav ul li {
+  padding: 0 17px 21px 0;
+  margin: 0;
+  display: block;
+  float: left;
+}
+/* line 19, ../sass/_navigation.scss */
+.mainNav ul li a {
+  float: left;
+  display: block;
+  color: #a9a9a9;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 25, ../sass/_navigation.scss */
+.mainNav ul li a:hover, .mainNav ul li a:focus {
+  color: #FFFFFF;
+}
+/* line 29, ../sass/_navigation.scss */
+.mainNav ul li ul {
+  list-style-type: none;
+  display: none;
+  margin: 13px 0 0;
+  padding-top: 41px;
+  width: 960px;
+  z-index: 1002;
+  position: absolute;
+  left: 0px;
+}
+/* line 38, ../sass/_navigation.scss */
+s
+.mainNav ul li ul:hover + a {
+  color: #fff;
+}
+/* line 41, ../sass/_navigation.scss */
+.mainNav ul li ul li {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  width: 160px;
+  height: 160px;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  z-index: 50;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  max-width: 280px;
+  cursor: pointer;
+}
+/* line 56, ../sass/_navigation.scss */
+.mainNav ul li ul li:first-child {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+}
+/* line 61, ../sass/_navigation.scss */
+.mainNav ul li ul li a {
+  width: 100%;
+}
+/* line 63, ../sass/_navigation.scss */
+.mainNav ul li ul li a img {
+  width: 149px;
+  margin: 0 auto;
+  height: 130px;
+}
+/* line 68, ../sass/_navigation.scss */
+.mainNav ul li ul li a p {
+  margin-top: 5px;
+  color: #333 !important;
+  background: #fff;
+}
+/* line 76, ../sass/_navigation.scss */
+.mainNav ul li .iearrow {
+  text-align: center;
+  margin: 0 auto;
+  display: none;
+  width: 17px;
+  height: 10px;
+  position: relative;
+  top: 28px;
+  background-image: url(../img/arrow.png);
+}
+/* line 88, ../sass/_navigation.scss */
+.mainNav .parent_submenu {
+  height: 0px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1001;
+  top: 120px;
+  left: 0px;
+  width: 100%;
+  -webkit-box-shadow: rgba(190, 190, 190, 0.4) 5px 5px 30px;
+  -moz-box-shadow: rgba(190, 190, 190, 0.4) 5px 5px 30px;
+  box-shadow: rgba(190, 190, 190, 0.4) 5px 5px 30px;
+}
+
+/* line 102, ../sass/_navigation.scss */
+.first {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+}
+
+/* float clearing for IE6 */
+/* line 119, ../sass/_navigation.scss */
+.image-fade {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
+}
+
+/* NO JS LOADED - Execute CSS2 */
+/* line 125, ../sass/_navigation.scss */
+.no-js .mainNav ul:hover > ul {
+  display: block;
+}
+/* line 130, ../sass/_navigation.scss */
+.no-js .mainNav ul .dropdown:hover > .iearrow, .no-js .mainNav ul .dropdown:hover > ul {
+  display: block;
+}
+/* line 135, ../sass/_navigation.scss */
+.no-js .mainNav ul .dropdown ul:hover {
+  display: block;
+}
+/* line 138, ../sass/_navigation.scss */
+.no-js .mainNav ul .dropdown ul li:hover {
+  color: #000;
+}
+/* line 143, ../sass/_navigation.scss */
+.no-js .mainNav ul li ul {
+  list-style-type: none;
+  display: none;
+  margin: 37px 0 0;
+  padding: 15px 0;
+  width: 960px;
+  z-index: 1002;
+  position: absolute;
+  left: 0px;
+  background: white;
+}
+
+/* line 1, ../sass/_header.scss */
+header {
+  height: 120px;
+  background-color: #141414;
+}
+/* line 4, ../sass/_header.scss */
+header #topnav {
+  width: 984px;
+  margin: 0 auto;
+  height: 71px;
+  position: relative;
+}
+/* line 9, ../sass/_header.scss */
+header #topnav .dyson_logo {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+}
+/* line 14, ../sass/_header.scss */
+header #topnav i {
+  color: #fff;
+  font-size: 1.3em;
+  position: relative;
+  top: 2px;
+}
+/* line 20, ../sass/_header.scss */
+header #topnav .icon-caret-down {
+  left: 5px;
+}
+/* line 23, ../sass/_header.scss */
+header #topnav ul {
+  list-style-type: none;
+  margin: 14px 0 0;
+  float: right;
+}
+/* line 27, ../sass/_header.scss */
+header #topnav ul li {
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+/* line 31, ../sass/_header.scss */
+header #topnav ul li input[type="text"] {
+  height: 16px;
+  width: 114px;
+  padding: 2px 0 2px 6px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  margin: -2px 0 0 -5px;
+}
+/* line 38, ../sass/_header.scss */
+header #topnav ul li .icon-search {
+  position: absolute;
+  right: 4px;
+  color: #b2b2b2;
+}
+/* line 43, ../sass/_header.scss */
+header #topnav ul li a {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-left: -3px;
+}
+/* line 48, ../sass/_header.scss */
+header #topnav ul li a:first-child {
+  position: relative;
+  top: 2px;
+}
+/* line 55, ../sass/_header.scss */
+header .menu {
+  width: 984px;
+  margin: 0 auto;
+  height: 80px;
+}

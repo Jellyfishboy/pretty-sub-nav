@@ -1,0 +1,38 @@
+@import "compass/css3";
+@font-face {
+  font-family: "Futura Book BT";
+  src: url("../font/futubk.otf");
+  src: local("?"),
+  url("../font/futubk.otf") format("opentype");
+}
+html, body {
+	height:100%;
+	width:100%;
+}
+body {
+	margin:0;
+	padding:0;
+}
+body {
+	font-size:75% !important; //1em = 12px
+  line-height:1.45em;
+}
+/* float clearing for IE6 */
+* html .clear {
+  height: 1%;
+  overflow: visible; 
+}
+/* float clearing for IE7 */
+*+html .clear {
+  min-height: 1%;
+}
+/* float clearing for everyone else */
+.clear:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; 
+}
+@import "_navigation.scss";
+@import "_header.scss";

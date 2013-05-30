@@ -1,0 +1,154 @@
+//Uber Navigation
+//Author: Tom Dallimore
+//Version: 3.0
+
+/***********MAIN NAV******/
+
+.mainNav {
+  height: 36px;
+  padding-right: 3px;
+  ul {
+    position: relative;
+    padding:0;
+    @extend .clear;
+    li {
+      padding: 0 17px 21px 0;
+      margin: 0;
+      display: block;
+      float: left;
+      a {
+        float: left;
+        display: block;
+        color: #a9a9a9;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover, &:focus {
+          color: #FFFFFF;
+        }
+      }
+      ul {
+        list-style-type: none;
+        display: none;
+        margin: 13px 0 0;
+        padding-top: 41px;
+        width: 960px;
+        z-index: 1002;
+        position: absolute;
+        left: 0px;s
+        &:hover + a {
+          color: #fff;
+        }
+        li {
+          border-right-style: solid;
+          border-right-width: 1px;
+          border-right-color: #D3D3D3;
+          width: 160px;
+          height: 160px;
+          float: left;
+          text-align: center;
+          font-weight: bold;
+          z-index: 50;
+          margin: 0;
+          padding: 0;
+          text-transform: none;
+          max-width: 280px;
+          cursor:pointer;
+          &:first-child {
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-left-color: #D3D3D3;
+          }
+          a {
+            width: 100%;
+            img {
+              width: 149px;
+              margin: 0 auto;
+              height: 130px;
+            }
+            p {
+              margin-top: 5px;
+              color: #333 !important;
+              background: #fff;
+            }
+          }
+        }
+      }
+      .iearrow {
+        text-align: center;
+        margin: 0 auto;
+        display: none;
+        width: 17px;
+        height: 10px;
+        position: relative;
+        top: 28px;
+        background-image: url(../img/arrow.png);
+      }
+    }
+  }
+  .parent_submenu {
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1001;
+    top: 120px;
+    left: 0px;
+    width: 100%;
+    -webkit-box-shadow: rgba(190, 190, 190, 0.4) 5px 5px 30px;
+    -moz-box-shadow: rgba(190, 190, 190, 0.4) 5px 5px 30px;
+    box-shadow: rgba(190, 190, 190, 0.4) 5px 5px 30px;
+  }
+}
+
+.first {
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+}
+
+/* float clearing for IE6 */
+
+// * {
+//   html .clear {
+//     height: 1%;
+//     overflow: visible;
+//   }
+//   + html .clear {
+//     min-height: 1%;
+//   }
+// }
+.image-fade {
+  @include opacity(0.65);
+}
+/* NO JS LOADED - Execute CSS2 */
+
+.no-js .mainNav ul {
+  &:hover > ul {
+    display: block;
+  }
+  .dropdown {
+    &:hover >   {
+      .iearrow, ul {
+        display: block;
+      }
+    }
+    ul {
+      &:hover {
+        display: block;
+      }
+      li:hover {
+        color: #000;
+      }
+    }
+  }
+  li ul {
+    list-style-type: none;
+    display: none;
+    margin: 37px 0 0;
+    padding: 15px 0;
+    width: 960px;
+    z-index: 1002;
+    position: absolute;
+    left: 0px;
+    background: white;
+  }
+}
