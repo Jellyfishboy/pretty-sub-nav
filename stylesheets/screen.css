@@ -123,26 +123,38 @@ s
   width: 149px;
   margin: 0 auto;
   height: 130px;
-  -webkit-transition-property: opacity, -webkit-transform;
-  -moz-transition-property: opacity, -moz-transform;
-  -o-transition-property: opacity, -o-transform;
-  transition-property: opacity, transform;
-  -webkit-transition-duration: 0.4s, 0.4s;
-  -moz-transition-duration: 0.4s, 0.4s;
-  -o-transition-duration: 0.4s, 0.4s;
-  transition-duration: 0.4s, 0.4s;
-  -webkit-transition-timing-function: linear, ease-in-out;
-  -moz-transition-timing-function: linear, ease-in-out;
-  -o-transition-timing-function: linear, ease-in-out;
-  transition-timing-function: linear, ease-in-out;
+  -webkit-transition-property: opacity, -webkit-transform, filter;
+  -moz-transition-property: opacity, -moz-transform, filter;
+  -o-transition-property: opacity, -o-transform, filter;
+  transition-property: opacity, transform, filter;
+  -webkit-transition-duration: 0.4s, 0.5s, 1s;
+  -moz-transition-duration: 0.4s, 0.5s, 1s;
+  -o-transition-duration: 0.4s, 0.5s, 1s;
+  transition-duration: 0.4s, 0.5s, 1s;
+  -webkit-transition-timing-function: linear, ease-in-out, ease-in;
+  -moz-transition-timing-function: linear, ease-in-out, ease-in;
+  -o-transition-timing-function: linear, ease-in-out, ease-in;
+  transition-timing-function: linear, ease-in-out, ease-in;
 }
 /* line 71, ../sass/_navigation.scss */
 .mainNav ul li ul li a p {
   margin-top: 5px;
-  color: #333 !important;
+  color: #333;
   background: #fff;
+  -webkit-transition-property: opacity, text-shadow, color;
+  -moz-transition-property: opacity, text-shadow, color;
+  -o-transition-property: opacity, text-shadow, color;
+  transition-property: opacity, text-shadow, color;
+  -webkit-transition-duration: 0.2s, 0.5s, 0.5s;
+  -moz-transition-duration: 0.2s, 0.5s, 0.5s;
+  -o-transition-duration: 0.2s, 0.5s, 0.5s;
+  transition-duration: 0.2s, 0.5s, 0.5s;
+  -webkit-transition-timing-function: linear, ease-in-out, ease-in-out;
+  -moz-transition-timing-function: linear, ease-in-out, ease-in-out;
+  -o-transition-timing-function: linear, ease-in-out, ease-in-out;
+  transition-timing-function: linear, ease-in-out, ease-in-out;
 }
-/* line 79, ../sass/_navigation.scss */
+/* line 82, ../sass/_navigation.scss */
 .mainNav ul li .iearrow {
   text-align: center;
   margin: 0 auto;
@@ -153,7 +165,7 @@ s
   top: 28px;
   background-image: url(../img/arrow.png);
 }
-/* line 91, ../sass/_navigation.scss */
+/* line 94, ../sass/_navigation.scss */
 .mainNav .parent_submenu {
   height: 0px;
   background-color: #fff;
@@ -167,7 +179,7 @@ s
   box-shadow: rgba(190, 190, 190, 0.4) 5px 5px 30px;
 }
 
-/* line 105, ../sass/_navigation.scss */
+/* line 108, ../sass/_navigation.scss */
 .first {
   border-left-style: solid;
   border-left-width: 1px;
@@ -175,30 +187,48 @@ s
 }
 
 /* float clearing for IE6 */
-/* line 122, ../sass/_navigation.scss */
+/* line 125, ../sass/_navigation.scss */
 .image-fade {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  -webkit-transform: scale(0.9, 0.9);
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+}
+
+/* line 135, ../sass/_navigation.scss */
+.p-fade {
+  text-shadow: 0px 0px 5px rgba(51, 51, 51, 0.9);
+  color: rgba(0, 0, 0, 0) !important;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
 }
 
 /* NO JS LOADED - Execute CSS2 */
-/* line 129, ../sass/_navigation.scss */
+/* line 143, ../sass/_navigation.scss */
 .no-js .mainNav ul:hover > ul {
   display: block;
 }
-/* line 134, ../sass/_navigation.scss */
+/* line 148, ../sass/_navigation.scss */
 .no-js .mainNav ul .dropdown:hover > .iearrow, .no-js .mainNav ul .dropdown:hover > ul {
   display: block;
 }
-/* line 139, ../sass/_navigation.scss */
+/* line 153, ../sass/_navigation.scss */
 .no-js .mainNav ul .dropdown ul:hover {
   display: block;
 }
-/* line 142, ../sass/_navigation.scss */
+/* line 156, ../sass/_navigation.scss */
 .no-js .mainNav ul .dropdown ul li:hover {
   color: #000;
 }
-/* line 147, ../sass/_navigation.scss */
+/* line 161, ../sass/_navigation.scss */
 .no-js .mainNav ul li ul {
   list-style-type: none;
   display: none;

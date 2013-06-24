@@ -20,10 +20,10 @@ function submenu_width_drop_selector() {
 function image_fade() {
 	$('.mainNav ul li ul li').hover(function(){
 	    $(this).removeClass('image-fade').siblings().find('img').addClass('image-fade');
-	    $(this).siblings().find('p').addClass('image-fade');
+	    $(this).siblings().find('p').addClass('p-fade');
 			},function(){
 	    $(this).siblings().andSelf().find('img').removeClass('image-fade');
-	    $(this).siblings().find('p').removeClass('image-fade');
+	    $(this).siblings().find('p').removeClass('p-fade');
 			});
 }
 $(document).ready(function () { 
