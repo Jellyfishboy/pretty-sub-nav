@@ -64,6 +64,9 @@
               width: 149px;
               margin: 0 auto;
               height: 130px;
+              @include transition-property(opacity,transform);
+              @include transition-duration(0.4s, 0.4s);
+              @include transition-timing-function(linear, ease-in-out);
             }
             p {
               margin-top: 5px;
@@ -118,6 +121,7 @@
 // }
 .image-fade {
   @include opacity(0.65);
+  
 }
 /* NO JS LOADED - Execute CSS2 */
 

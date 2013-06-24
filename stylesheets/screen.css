@@ -123,14 +123,26 @@ s
   width: 149px;
   margin: 0 auto;
   height: 130px;
+  -webkit-transition-property: opacity, -webkit-transform;
+  -moz-transition-property: opacity, -moz-transform;
+  -o-transition-property: opacity, -o-transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 0.4s, 0.4s;
+  -moz-transition-duration: 0.4s, 0.4s;
+  -o-transition-duration: 0.4s, 0.4s;
+  transition-duration: 0.4s, 0.4s;
+  -webkit-transition-timing-function: linear, ease-in-out;
+  -moz-transition-timing-function: linear, ease-in-out;
+  -o-transition-timing-function: linear, ease-in-out;
+  transition-timing-function: linear, ease-in-out;
 }
-/* line 68, ../sass/_navigation.scss */
+/* line 71, ../sass/_navigation.scss */
 .mainNav ul li ul li a p {
   margin-top: 5px;
   color: #333 !important;
   background: #fff;
 }
-/* line 76, ../sass/_navigation.scss */
+/* line 79, ../sass/_navigation.scss */
 .mainNav ul li .iearrow {
   text-align: center;
   margin: 0 auto;
@@ -141,7 +153,7 @@ s
   top: 28px;
   background-image: url(../img/arrow.png);
 }
-/* line 88, ../sass/_navigation.scss */
+/* line 91, ../sass/_navigation.scss */
 .mainNav .parent_submenu {
   height: 0px;
   background-color: #fff;
@@ -155,7 +167,7 @@ s
   box-shadow: rgba(190, 190, 190, 0.4) 5px 5px 30px;
 }
 
-/* line 102, ../sass/_navigation.scss */
+/* line 105, ../sass/_navigation.scss */
 .first {
   border-left-style: solid;
   border-left-width: 1px;
@@ -163,30 +175,30 @@ s
 }
 
 /* float clearing for IE6 */
-/* line 119, ../sass/_navigation.scss */
+/* line 122, ../sass/_navigation.scss */
 .image-fade {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
   opacity: 0.65;
 }
 
 /* NO JS LOADED - Execute CSS2 */
-/* line 125, ../sass/_navigation.scss */
+/* line 129, ../sass/_navigation.scss */
 .no-js .mainNav ul:hover > ul {
   display: block;
 }
-/* line 130, ../sass/_navigation.scss */
+/* line 134, ../sass/_navigation.scss */
 .no-js .mainNav ul .dropdown:hover > .iearrow, .no-js .mainNav ul .dropdown:hover > ul {
   display: block;
 }
-/* line 135, ../sass/_navigation.scss */
+/* line 139, ../sass/_navigation.scss */
 .no-js .mainNav ul .dropdown ul:hover {
   display: block;
 }
-/* line 138, ../sass/_navigation.scss */
+/* line 142, ../sass/_navigation.scss */
 .no-js .mainNav ul .dropdown ul li:hover {
   color: #000;
 }
-/* line 143, ../sass/_navigation.scss */
+/* line 147, ../sass/_navigation.scss */
 .no-js .mainNav ul li ul {
   list-style-type: none;
   display: none;
